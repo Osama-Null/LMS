@@ -1,0 +1,37 @@
+﻿@model RegisterStep1ViewModel;
+@{
+    ViewData["Title"] = "RegisterStep1";
+}
+
+<div class="card">
+    <h2>Register</h2>
+    <form method="post" asp-action="Register" asp-controller="Account">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div>
+            <input type="text" asp-for="Email">
+            <label asp-for="Email">Email</label>
+            <span asp-validation-for="Email"></span>
+        </div>
+
+        <div>
+            <input type="password" asp-for="Password">
+            <label asp-for="Password">Password</label>
+            <span asp-validation-for="Password"></span>
+        </div>
+        <div>
+            <input type="password" asp-for="ConfirmPassword">
+            <label asp-for="Password">Confirm Password</label>
+            <span asp-validation-for="ConfirmPassword"></span>
+        </div>
+        <input class="margin-top" type="submit" value="Register">
+    </form>
+</div>
+
+
+<div class="try">
+    <table>
+    <tr>
+        <td>   wedewd</td>
+    </tr>
+</table>
+</div>
